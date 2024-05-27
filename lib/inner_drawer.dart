@@ -562,7 +562,7 @@ class InnerDrawerState extends State<InnerDrawer> with SingleTickerProviderState
                   ///Trigger
                   _trigger(AlignmentDirectional.centerStart, _leftChild),
                   _trigger(AlignmentDirectional.centerEnd, _rightChild),
-                ].where((a) => a != null).toList() as List<Widget>,
+                ].where((a) => a != null).toList().cast<Widget>(),
               ),
             ),
           ),
